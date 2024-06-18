@@ -5,7 +5,7 @@ Este projeto é uma aplicação web interativa desenvolvida com React para a dis
 
 ## Participantes do Grupo 🧑🏽‍💻👩🏽‍💻
 
-- Raine Vitoria Feliz
+- Raine Vitoria Felix Moreira
 - Larissa Gabrielle de Souza
 - Fábio Eloy Passos
 
