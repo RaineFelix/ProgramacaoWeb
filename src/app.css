@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s;
+}
+
+:root {
+  --primary-color: #9505e9;
+  --dark-primary-color: #7b00b6;
+}
+
+body {
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+}
+
+.layout {
+  display: grid;
+  grid-template-rows: 90vh 10vh;
+}
+
+main {
+  overflow-y: auto;
+  padding-bottom: 4rem;
+}
+
+dialog {
+  border: 1px solid grey;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: fit-content;
+  max-height: 50vh;
+  overflow-y: auto;
+  box-shadow: 5px 5px var(--dark-primary-color);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+}
+
+input {
+  background-color: rgb(236, 236, 236);
+  border: none;
+  padding: 0.5rem 0;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.action-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 768px) {
+  .flex-break-mobile {
+    flex-direction: column;
+  }
+
+  .action-buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid grey;
+}
+
+.title {
+  border-bottom: 1px solid grey;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  width: 100%;
+}
+
+.remove {
+  color: red;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+li:hover {
+  background-color: rgb(245, 245, 245);
+}
+
+.primary-button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.primary-button:hover {
+  background-color: var(--dark-primary-color);
+}
+
+.primary-button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+.img {
+  height: 400px;
+  width: 100%;
+  object-fit: contain;
+}
+
+form {
+  width: 100%;
+}
